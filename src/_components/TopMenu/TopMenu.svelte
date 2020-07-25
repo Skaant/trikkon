@@ -52,10 +52,11 @@
 
     { :else }
 
-      <button on:click={ () => currentLayer.update(layerIndex) }>
+      <button on:click={ () => currentLayer.update(() => layerIndex) }>
         { layerIndex }</button>
     { /if }
   { /each }
+  //
   ZOOM :
   <button on:click={ handleZoomLess }>
     -</button>

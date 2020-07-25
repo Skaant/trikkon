@@ -8,6 +8,7 @@
   } from '../../_stores/stores'
   import tileTypesData from '../../_data/tiles/types/tileTypes.data'
   import tileTypeEnum from '../../_enums/tileType/tileType.enum'
+import Pin from '../_svg/pin/pin.svg.svelte'
 
   $: tileTypeData = ($hoveredTile || $selectedTile)
     && tileTypesData[($hoveredTile || $selectedTile).type]
@@ -49,7 +50,7 @@
       ({ tile.id.replace(/\,/g, ', ') })</span>
     { #if $selectedTile === tile }
     
-      <i class="fas fa-thumbtack"></i>
+      <Pin/>
     { /if }
   </h2>
   

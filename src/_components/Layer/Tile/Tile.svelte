@@ -4,6 +4,7 @@
   export let originY
 
   import {
+    currentLayer,
     zoom,
     hoveredTile,
     selectedTile,
@@ -18,7 +19,7 @@
     tileX, tileY, tileZ
   } = tile
 
-  const reversed = !(tileX + tileY + tileZ)%2
+  $: reversed = !(tileX + tileY + tileZ)%2
 
   $: top = originY
     - height / 2

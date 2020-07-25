@@ -22,13 +22,13 @@ export default {
             '0,0,0': {
               type: tileTypeEnum.STEM
             },
-            '1,1,-1': {
+            '0,0,-1': {
               type: tileTypeEnum.ROOT
             },
-            '1,-1,1': {
+            '0,-1,0': {
               type: tileTypeEnum.ROOT
             },
-            '-1,1,1': {
+            '-1,0,0': {
               type: tileTypeEnum.ROOT
             }
           },
